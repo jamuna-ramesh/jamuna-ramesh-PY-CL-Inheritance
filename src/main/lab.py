@@ -54,5 +54,13 @@ class Vehicle:
                 - Prints:
                 - str: "Car is refueling"
     """
-        
+class Car(Vehicle):
+    def __init__(self, make, model, year, fuel_type):
+        super().__init__(make, model, year)
+        self.fuel_type = fuel_type
+    def drive(self):
+        print("Car is moving")
+    def refuel(self):
+        print("Car is refueling")        
+
 
